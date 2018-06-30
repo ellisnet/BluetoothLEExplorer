@@ -11,7 +11,7 @@
     <AssemblyName>BluetoothLEExplorer</AssemblyName>
     <DefaultLanguage>en-US</DefaultLanguage>
     <TargetPlatformIdentifier>UAP</TargetPlatformIdentifier>
-    <TargetPlatformVersion>10.0.17133.0</TargetPlatformVersion>
+    <TargetPlatformVersion>10.0.17134.0</TargetPlatformVersion>
     <TargetPlatformMinVersion>10.0.15063.0</TargetPlatformMinVersion>
     <MinimumVisualStudioVersion>14</MinimumVisualStudioVersion>
     <EnableDotNetNativeCompatibleProfile>true</EnableDotNetNativeCompatibleProfile>
@@ -277,10 +277,6 @@
     <ProjectReference Include="..\..\GattServicesLibrary\GattServicesLibrary\GattServicesLibrary.csproj">
       <Project>{644f40ad-eabb-4570-b9b7-e3f8ddaa80f3}</Project>
       <Name>GattServicesLibrary</Name>
-    </ProjectReference>
-    <ProjectReference Include="..\..\SortedObservableCollection\SortedObservableCollection\SortedObservableCollection.csproj">
-      <Project>{be79fc52-6041-4913-b0d4-66c100944904}</Project>
-      <Name>SortedObservableCollection</Name>
     </ProjectReference>
     <ProjectReference Include="..\GattHelper\GattHelper.csproj">
       <Project>{37c63fdd-d995-4cc2-b014-4fb323194001}</Project>

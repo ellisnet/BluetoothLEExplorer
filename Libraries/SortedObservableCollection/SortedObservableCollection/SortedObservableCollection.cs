@@ -74,10 +74,10 @@ namespace SortedObservableCollection
             {   // if the collection is empty, just return 0
                 return 0;
             }
-            if( this.Count == 1)
+            if (this.Count == 1)
             {
                 // if the collection only has 1 item, it's an easy compare
-                if(compare(item, this[0]) >= 0)
+                if (compare(item, this[0]) >= 0)
                 {
                     return 1;
                 }
@@ -100,9 +100,9 @@ namespace SortedObservableCollection
                 }
             }
 
-            if(firstLargerItem == -1)
+            if (firstLargerItem == -1)
             {
-                if(newItem)
+                if (newItem)
                 {
                     index = this.Count;
                 }
@@ -112,7 +112,7 @@ namespace SortedObservableCollection
                 }
             }
             else
-            { 
+            {
                 index = firstLargerItem;
             }
 
@@ -142,12 +142,12 @@ namespace SortedObservableCollection
 
         private async void NotifyableItem_PropertyChanged(object sender, PropertyChangedEventArgs e)
         {
-            if(comparePropertyName != String.Empty && e.PropertyName != this.comparePropertyName)
-            if(String.IsNullOrEmpty(comparePropertyName) == false && String.Compare(e.PropertyName, comparePropertyName) != 0)
-            {
-                // The item changed, but not the property used to compare, no need to recalculate the sorting
-                return;
-            }
+            if (comparePropertyName != String.Empty && e.PropertyName != this.comparePropertyName)
+                if (String.IsNullOrEmpty(comparePropertyName) == false && String.Compare(e.PropertyName, comparePropertyName) != 0)
+                {
+                    // The item changed, but not the property used to compare, no need to recalculate the sorting
+                    return;
+                }
 
             try
             {
@@ -194,7 +194,7 @@ namespace SortedObservableCollection
             {
                 semaphore.Release();
             }
-            
+
         }
 
         protected async override void RemoveItem(int index)
@@ -244,7 +244,7 @@ namespace SortedObservableCollection
             {
                 semaphore.Release();
             }
-            
+
         }
     }
 }

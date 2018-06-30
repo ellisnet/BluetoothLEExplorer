@@ -122,17 +122,11 @@
     <Content Include="Assets\Wide310x150Logo.scale-200.png" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\SortedObservableCollection\SortedObservableCollection.csproj">
-      <Project>{be79fc52-6041-4913-b0d4-66c100944904}</Project>
-      <Name>SortedObservableCollection</Name>
-    </ProjectReference>
-  </ItemGroup>
-  <ItemGroup>
     <Service Include="{82A7F48D-3B50-4B1E-B82E-3ADA8210C358}" />
   </ItemGroup>
   <ItemGroup>
     <PackageReference Include="Microsoft.NETCore.UniversalWindowsPlatform">
-      <Version>5.2.3</Version>
+      <Version>6.1.5</Version>
     </PackageReference>
     <PackageReference Include="MSTest.TestAdapter">
       <Version>1.1.11</Version>
@@ -140,6 +134,12 @@
     <PackageReference Include="MSTest.TestFramework">
       <Version>1.1.11</Version>
     </PackageReference>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\SortedObservableCollection\SortedObservableCollection.csproj">
+      <Project>{745c64ff-73f9-4675-bea1-28a67212a73c}</Project>
+      <Name>SortedObservableCollection</Name>
+    </ProjectReference>
   </ItemGroup>
   <PropertyGroup Condition=" '$(VisualStudioVersion)' == '' or '$(VisualStudioVersion)' &lt; '14.0' ">
     <VisualStudioVersion>14.0</VisualStudioVersion>

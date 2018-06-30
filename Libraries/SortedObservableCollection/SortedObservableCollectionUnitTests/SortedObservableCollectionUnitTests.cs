@@ -1,6 +1,5 @@
 ﻿
 using System;
-using SortedObservableCollection;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
 using System.Collections;
 using System.ComponentModel;

@@ -1,10 +1,11 @@
 ﻿using System;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
-using Windows.Storage.Streams;
 using System.Text;
-using Windows.Security.Cryptography;
 using System.Collections;
 using GattServicesLibrary.Converters;
+
+using Windows.Storage.Streams;
+using Windows.Security.Cryptography;
 
 namespace BluetoothLEExplorer.UnitTest
 {
@@ -134,7 +135,7 @@ namespace BluetoothLEExplorer.UnitTest
             Int16 data = 42;
 
             Assert.IsTrue(data == GattConvert.ToInt64(GattConvert.ToIBuffer(data)));
-            Assert.IsFalse((data - 1) ==  GattConvert.ToInt64(GattConvert.ToIBuffer(data)));
+            Assert.IsFalse((data - 1) == GattConvert.ToInt64(GattConvert.ToIBuffer(data)));
         }
 
         [TestMethod]

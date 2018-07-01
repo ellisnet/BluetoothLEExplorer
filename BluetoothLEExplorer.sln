@@ -17,10 +17,19 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GattServicesLibrary.UWP", "
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GattServicesLibrary.Net", "Libs\GattServicesLibrary\GattServicesLibrary.Net\GattServicesLibrary.Net.csproj", "{161BA1A8-A83A-4C10-9CE0-677C0CEFD680}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BluetoothLEExplorerUnitTests.Net", "BluetoothLEExplorerUnitTests.Net\BluetoothLEExplorerUnitTests.Net.csproj", "{5DBC3DF0-3DF1-4D4F-850F-BF3A80D8C192}"
+EndProject
+Project("{D954291E-2A0B-460D-934E-DC6B0785DB48}") = "BluetoothLEExplorerUnitTests.Shared", "BluetoothLEExplorerUnitTests.Shared\BluetoothLEExplorerUnitTests.Shared.shproj", "{AA22E14D-5EFC-402D-8505-1B5E75FAA3CC}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Tests", "Tests", "{70E1E439-6844-4AF5-8049-7C5BC7C1455C}"
+EndProject
 Global
 	GlobalSection(SharedMSBuildProjectFiles) = preSolution
 		Libs\GattServicesLibrary\GattServicesLibrary.Shared\GattServicesLibrary.Shared.projitems*{161ba1a8-a83a-4c10-9ce0-677c0cefd680}*SharedItemsImports = 4
+		BluetoothLEExplorerUnitTests.Shared\BluetoothLEExplorerUnitTests.Shared.projitems*{5dbc3df0-3df1-4d4f-850f-bf3a80d8c192}*SharedItemsImports = 4
+		BluetoothLEExplorerUnitTests.Shared\BluetoothLEExplorerUnitTests.Shared.projitems*{6f503df9-71c9-4340-90bb-d9aa14adb686}*SharedItemsImports = 4
 		Libs\GattServicesLibrary\GattServicesLibrary.Shared\GattServicesLibrary.Shared.projitems*{81627400-7444-4cc3-95aa-88d5144e4f5b}*SharedItemsImports = 13
+		BluetoothLEExplorerUnitTests.Shared\BluetoothLEExplorerUnitTests.Shared.projitems*{aa22e14d-5efc-402d-8505-1b5e75faa3cc}*SharedItemsImports = 13
 		Libs\GattServicesLibrary\GattServicesLibrary.Shared\GattServicesLibrary.Shared.projitems*{f2ac4109-2809-4535-984b-f4e8fb589ae2}*SharedItemsImports = 4
 	EndGlobalSection
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -122,15 +131,34 @@ Global
 		{161BA1A8-A83A-4C10-9CE0-677C0CEFD680}.Release|x64.Build.0 = Release|Any CPU
 		{161BA1A8-A83A-4C10-9CE0-677C0CEFD680}.Release|x86.ActiveCfg = Release|Any CPU
 		{161BA1A8-A83A-4C10-9CE0-677C0CEFD680}.Release|x86.Build.0 = Release|Any CPU
+		{5DBC3DF0-3DF1-4D4F-850F-BF3A80D8C192}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5DBC3DF0-3DF1-4D4F-850F-BF3A80D8C192}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5DBC3DF0-3DF1-4D4F-850F-BF3A80D8C192}.Debug|ARM.ActiveCfg = Debug|Any CPU
+		{5DBC3DF0-3DF1-4D4F-850F-BF3A80D8C192}.Debug|ARM.Build.0 = Debug|Any CPU
+		{5DBC3DF0-3DF1-4D4F-850F-BF3A80D8C192}.Debug|x64.ActiveCfg = Debug|Any CPU
+		{5DBC3DF0-3DF1-4D4F-850F-BF3A80D8C192}.Debug|x64.Build.0 = Debug|Any CPU
+		{5DBC3DF0-3DF1-4D4F-850F-BF3A80D8C192}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{5DBC3DF0-3DF1-4D4F-850F-BF3A80D8C192}.Debug|x86.Build.0 = Debug|Any CPU
+		{5DBC3DF0-3DF1-4D4F-850F-BF3A80D8C192}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5DBC3DF0-3DF1-4D4F-850F-BF3A80D8C192}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5DBC3DF0-3DF1-4D4F-850F-BF3A80D8C192}.Release|ARM.ActiveCfg = Release|Any CPU
+		{5DBC3DF0-3DF1-4D4F-850F-BF3A80D8C192}.Release|ARM.Build.0 = Release|Any CPU
+		{5DBC3DF0-3DF1-4D4F-850F-BF3A80D8C192}.Release|x64.ActiveCfg = Release|Any CPU
+		{5DBC3DF0-3DF1-4D4F-850F-BF3A80D8C192}.Release|x64.Build.0 = Release|Any CPU
+		{5DBC3DF0-3DF1-4D4F-850F-BF3A80D8C192}.Release|x86.ActiveCfg = Release|Any CPU
+		{5DBC3DF0-3DF1-4D4F-850F-BF3A80D8C192}.Release|x86.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
 	EndGlobalSection
 	GlobalSection(NestedProjects) = preSolution
+		{6F503DF9-71C9-4340-90BB-D9AA14ADB686} = {70E1E439-6844-4AF5-8049-7C5BC7C1455C}
 		{D8EDCF68-8D38-4035-AE33-0977D9C15075} = {CE7206EA-62F5-44E4-9AC1-B2BE2FB120CA}
 		{81627400-7444-4CC3-95AA-88D5144E4F5B} = {CE7206EA-62F5-44E4-9AC1-B2BE2FB120CA}
 		{F2AC4109-2809-4535-984B-F4E8FB589AE2} = {CE7206EA-62F5-44E4-9AC1-B2BE2FB120CA}
 		{161BA1A8-A83A-4C10-9CE0-677C0CEFD680} = {CE7206EA-62F5-44E4-9AC1-B2BE2FB120CA}
+		{5DBC3DF0-3DF1-4D4F-850F-BF3A80D8C192} = {70E1E439-6844-4AF5-8049-7C5BC7C1455C}
+		{AA22E14D-5EFC-402D-8505-1B5E75FAA3CC} = {70E1E439-6844-4AF5-8049-7C5BC7C1455C}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {88D124C7-44A9-472A-A79B-B944350BE53E}

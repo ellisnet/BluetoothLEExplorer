@@ -15,7 +15,7 @@ using Windows.Security.Cryptography;
 using Windows.Storage.Streams;
 using Windows.UI.Xaml.Navigation;
 using Windows.UI.Popups;
-using GattHelper.Converters;
+using GattServicesLibrary.Converters;
 
 namespace BluetoothLEExplorer.ViewModels
 {

@@ -14,6 +14,8 @@ using BluetoothLEExplorer.Models;
 using BluetoothLEExplorer.ViewModels;
 using System.Diagnostics;
 
+using UnhandledExceptionEventArgs = Windows.UI.Xaml.UnhandledExceptionEventArgs;
+
 namespace BluetoothLEExplorer
 {
     //// Documentation on APIs used in this page: 

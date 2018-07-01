@@ -13,7 +13,7 @@ using Windows.Devices.Bluetooth;
 using Windows.Devices.Bluetooth.GenericAttributeProfile;
 using Windows.Security.Cryptography;
 using Windows.Storage.Streams;
-using GattHelper.Converters;
+using GattServicesLibrary.Converters;
 
 namespace BluetoothLEExplorer.Models
 {

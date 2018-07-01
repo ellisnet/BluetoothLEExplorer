@@ -1,0 +1,37 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <MSBuildAllProjects>$(MSBuildAllProjects);$(MSBuildThisFileFullPath)</MSBuildAllProjects>
+    <HasSharedItems>true</HasSharedItems>
+    <SharedGUID>81627400-7444-4cc3-95aa-88d5144e4f5b</SharedGUID>
+  </PropertyGroup>
+  <PropertyGroup Label="Configuration">
+    <Import_RootNamespace>GattServicesLibrary</Import_RootNamespace>
+  </PropertyGroup>
+  <ItemGroup>
+    <Compile Include="$(MSBuildThisFileDirectory)CharacteristicParameterValues\CharacteristicParameterValueEnums.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Characteristics\BatteryLevelCharacteristic.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Characteristics\BloodPressureFeatureCharacteristic.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Characteristics\BloodPressureMeasurementCharacteristic.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Characteristics\HeartRateMeasurementCharacteristic.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Characteristics\MicrosoftIndicateCharacteristic.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Characteristics\MicrosoftNotifyCharacteristic.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Characteristics\MicrosoftReadCharacteristic.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Characteristics\MicrosoftReadLongCharacteristic.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Characteristics\MicrosoftWriteCharacteristic.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Converters\GattConvert.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)GenericGattCharacteristic.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)GenericGattService.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Helpers\CreateServiceException.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Helpers\GattServicesHelper.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Helpers\HelperExtensions.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Helpers\PresentationFormats.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Helpers\ValueConverter.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Services\AlertNotificationService.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Services\BatteryService.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Services\BloodPressureService.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Services\CurrentTimeService.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Services\HeartRateService.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Services\MicrosoftService.cs" />
+  </ItemGroup>
+</Project>

@@ -12,7 +12,7 @@
     <DefaultLanguage>en-US</DefaultLanguage>
     <TargetPlatformIdentifier>UAP</TargetPlatformIdentifier>
     <TargetPlatformVersion>10.0.17134.0</TargetPlatformVersion>
-    <TargetPlatformMinVersion>10.0.15063.0</TargetPlatformMinVersion>
+    <TargetPlatformMinVersion>10.0.16299.0</TargetPlatformMinVersion>
     <MinimumVisualStudioVersion>14</MinimumVisualStudioVersion>
     <EnableDotNetNativeCompatibleProfile>true</EnableDotNetNativeCompatibleProfile>
     <FileAlignment>512</FileAlignment>
@@ -274,18 +274,8 @@
     <Folder Include="Services\Enums\" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\..\GattServicesLibrary\GattServicesLibrary\GattServicesLibrary.csproj">
-      <Project>{644f40ad-eabb-4570-b9b7-e3f8ddaa80f3}</Project>
-      <Name>GattServicesLibrary</Name>
-    </ProjectReference>
-    <ProjectReference Include="..\GattHelper\GattHelper.csproj">
-      <Project>{37c63fdd-d995-4cc2-b014-4fb323194001}</Project>
-      <Name>GattHelper</Name>
-    </ProjectReference>
-  </ItemGroup>
-  <ItemGroup>
     <PackageReference Include="Microsoft.NETCore.UniversalWindowsPlatform">
-      <Version>5.3.3</Version>
+      <Version>6.1.5</Version>
     </PackageReference>
     <PackageReference Include="Microsoft.Xaml.Behaviors.Uwp.Managed">
       <Version>2.0.0</Version>
@@ -302,6 +292,16 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="BluetoothLEExplorer_TemporaryKey.pfx" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Libraries\GattServicesLibrary\GattServicesLibrary.UWP\GattServicesLibrary.UWP.csproj">
+      <Project>{f2ac4109-2809-4535-984b-f4e8fb589ae2}</Project>
+      <Name>GattServicesLibrary.UWP</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Libraries\SortedObservableCollection\SortedObservableCollection\SortedObservableCollection.csproj">
+      <Project>{d8edcf68-8d38-4035-ae33-0977d9c15075}</Project>
+      <Name>SortedObservableCollection</Name>
+    </ProjectReference>
   </ItemGroup>
   <PropertyGroup Condition=" '$(VisualStudioVersion)' == '' or '$(VisualStudioVersion)' &lt; '14.0' ">
     <VisualStudioVersion>14.0</VisualStudioVersion>

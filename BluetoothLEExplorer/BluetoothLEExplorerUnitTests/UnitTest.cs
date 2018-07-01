@@ -1,11 +1,10 @@
-﻿
-using System;
+﻿using System;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
 using Windows.Storage.Streams;
 using System.Text;
 using Windows.Security.Cryptography;
 using System.Collections;
-using GattHelper.Converters;
+using GattServicesLibrary.Converters;
 
 namespace BluetoothLEExplorer.UnitTest
 {
@@ -35,7 +34,6 @@ namespace BluetoothLEExplorer.UnitTest
             Assert.AreEqual(data, GattConvert.ToInt32(buf));
             Assert.AreNotEqual(43, GattConvert.ToInt32(buf));
         }
-
 
         [TestMethod]
         public void IntTest2()

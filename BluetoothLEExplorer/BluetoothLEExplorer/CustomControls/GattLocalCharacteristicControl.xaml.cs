@@ -13,7 +13,6 @@ using Windows.UI.Xaml.Controls;
 using Windows.Storage.Streams;
 using Windows.Devices.Bluetooth.GenericAttributeProfile;
 using Windows.Security.Cryptography;
-using GattHelper.Converters;
 using Windows.UI.Popups;
 
 //// The User Control item template is documented at http://go.microsoft.com/fwlink/?LinkId=234236

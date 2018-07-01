@@ -6,7 +6,7 @@ using System.Collections.ObjectModel;
 using GattServicesLibrary;
 using Template10.Mvvm;
 using Windows.Devices.Bluetooth.GenericAttributeProfile;
-using GattHelper.Converters;
+using GattServicesLibrary.Converters;
 using System;
 
 namespace BluetoothLEExplorer.ViewModels

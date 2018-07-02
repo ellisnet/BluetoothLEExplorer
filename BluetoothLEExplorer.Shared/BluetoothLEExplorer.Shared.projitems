@@ -1,0 +1,40 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <MSBuildAllProjects>$(MSBuildAllProjects);$(MSBuildThisFileFullPath)</MSBuildAllProjects>
+    <HasSharedItems>true</HasSharedItems>
+    <SharedGUID>d58ef17c-a484-448c-b19d-2b73f291b174</SharedGUID>
+  </PropertyGroup>
+  <PropertyGroup Label="Configuration">
+    <Import_RootNamespace>BluetoothLEExplorer</Import_RootNamespace>
+  </PropertyGroup>
+  <ItemGroup>
+    <Compile Include="$(MSBuildThisFileDirectory)Models\GattSampleContext.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Models\ObservableBluetoothLEDevice.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Models\ObservableGattCharacteristics.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Models\ObservableGattDeviceService.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Services\Converters\Converters.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Services\DispatcherService\DispatcherService.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Services\GattUuidsService\GattUuidsService.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Services\Other\BytePadder.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Services\Other\GattProtocolErrorParser.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Services\SettingsServices\SettingsService.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Services\ToastService\ToastService.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)ViewModels\BeaconViewModel.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)ViewModels\CharacteristicPageViewModel.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)ViewModels\DeviceServicesPageViewModel.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)ViewModels\DiscoverViewModel.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)ViewModels\GenericGattCharacteristicViewModel.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)ViewModels\GenericGattServiceViewModel.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)ViewModels\Services\BatteryServicePageViewModel.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)ViewModels\Services\BloodPressureServicePageViewModel.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)ViewModels\Services\HeartRateServicePageViewModel.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)ViewModels\Services\MicrosoftServicePageViewModel.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)ViewModels\SettingsPageViewModel.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)ViewModels\ShellViewModel.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)ViewModels\VirtualPeripheralPageViewModel.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="$(MSBuildThisFileDirectory)Services\Enums\" />
+  </ItemGroup>
+</Project>

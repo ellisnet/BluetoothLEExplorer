@@ -23,6 +23,10 @@ Project("{D954291E-2A0B-460D-934E-DC6B0785DB48}") = "BluetoothLEExplorerUnitTest
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Tests", "Tests", "{70E1E439-6844-4AF5-8049-7C5BC7C1455C}"
 EndProject
+Project("{D954291E-2A0B-460D-934E-DC6B0785DB48}") = "BluetoothLEExplorer.Shared", "BluetoothLEExplorer.Shared\BluetoothLEExplorer.Shared.shproj", "{D58EF17C-A484-448C-B19D-2B73F291B174}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BluetoothLEExplorer.Net", "BluetoothLEExplorer.Net\BluetoothLEExplorer.Net.csproj", "{89084131-8B09-4109-8079-65379674DF99}"
+EndProject
 Global
 	GlobalSection(SharedMSBuildProjectFiles) = preSolution
 		Libs\GattServicesLibrary\GattServicesLibrary.Shared\GattServicesLibrary.Shared.projitems*{161ba1a8-a83a-4c10-9ce0-677c0cefd680}*SharedItemsImports = 4
@@ -30,6 +34,8 @@ Global
 		BluetoothLEExplorerUnitTests.Shared\BluetoothLEExplorerUnitTests.Shared.projitems*{6f503df9-71c9-4340-90bb-d9aa14adb686}*SharedItemsImports = 4
 		Libs\GattServicesLibrary\GattServicesLibrary.Shared\GattServicesLibrary.Shared.projitems*{81627400-7444-4cc3-95aa-88d5144e4f5b}*SharedItemsImports = 13
 		BluetoothLEExplorerUnitTests.Shared\BluetoothLEExplorerUnitTests.Shared.projitems*{aa22e14d-5efc-402d-8505-1b5e75faa3cc}*SharedItemsImports = 13
+		BluetoothLEExplorer.Shared\BluetoothLEExplorer.Shared.projitems*{ad1cbe3c-a68a-4e02-8001-e02b815560ee}*SharedItemsImports = 4
+		BluetoothLEExplorer.Shared\BluetoothLEExplorer.Shared.projitems*{d58ef17c-a484-448c-b19d-2b73f291b174}*SharedItemsImports = 13
 		Libs\GattServicesLibrary\GattServicesLibrary.Shared\GattServicesLibrary.Shared.projitems*{f2ac4109-2809-4535-984b-f4e8fb589ae2}*SharedItemsImports = 4
 	EndGlobalSection
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -147,6 +153,22 @@ Global
 		{5DBC3DF0-3DF1-4D4F-850F-BF3A80D8C192}.Release|x64.Build.0 = Release|Any CPU
 		{5DBC3DF0-3DF1-4D4F-850F-BF3A80D8C192}.Release|x86.ActiveCfg = Release|Any CPU
 		{5DBC3DF0-3DF1-4D4F-850F-BF3A80D8C192}.Release|x86.Build.0 = Release|Any CPU
+		{89084131-8B09-4109-8079-65379674DF99}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{89084131-8B09-4109-8079-65379674DF99}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{89084131-8B09-4109-8079-65379674DF99}.Debug|ARM.ActiveCfg = Debug|Any CPU
+		{89084131-8B09-4109-8079-65379674DF99}.Debug|ARM.Build.0 = Debug|Any CPU
+		{89084131-8B09-4109-8079-65379674DF99}.Debug|x64.ActiveCfg = Debug|Any CPU
+		{89084131-8B09-4109-8079-65379674DF99}.Debug|x64.Build.0 = Debug|Any CPU
+		{89084131-8B09-4109-8079-65379674DF99}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{89084131-8B09-4109-8079-65379674DF99}.Debug|x86.Build.0 = Debug|Any CPU
+		{89084131-8B09-4109-8079-65379674DF99}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{89084131-8B09-4109-8079-65379674DF99}.Release|Any CPU.Build.0 = Release|Any CPU
+		{89084131-8B09-4109-8079-65379674DF99}.Release|ARM.ActiveCfg = Release|Any CPU
+		{89084131-8B09-4109-8079-65379674DF99}.Release|ARM.Build.0 = Release|Any CPU
+		{89084131-8B09-4109-8079-65379674DF99}.Release|x64.ActiveCfg = Release|Any CPU
+		{89084131-8B09-4109-8079-65379674DF99}.Release|x64.Build.0 = Release|Any CPU
+		{89084131-8B09-4109-8079-65379674DF99}.Release|x86.ActiveCfg = Release|Any CPU
+		{89084131-8B09-4109-8079-65379674DF99}.Release|x86.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
